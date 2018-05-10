@@ -54,8 +54,8 @@ class RotatedCookiesMiddleware():
         self.stats = stats
         self.storage = load_object(settings['COOKIE_STORAGE'])(settings)
         self.active_restrict_num = settings.get(
-            'ACTIVE_RESTRICT_NUM',
-            getattr(default_settings, 'ACTIVE_RESTRICT_NUM')
+            'COOKIE_ACTIVE_RESTRICT_NUM',
+            getattr(default_settings, 'COOKIE_ACTIVE_RESTRICT_NUM')
         )
         self.cookies = list(self.storage.retrieve_cookies())
         self.valid_cookies = list()

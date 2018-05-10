@@ -11,7 +11,7 @@ class CookieMongoDBStorage(object):
         password_key = 'COOKIE_MONGODB_PASSWORD'
         db_key = 'COOKIE_MONGODB_DB'
         coll_key = 'COOKIE_MONGODB_COLL'
-        query_condition_key = 'QUERY_CONDITION'
+        query_condition_key = 'COOKIE_QUERY_CONDITION'
 
         self.query_condition = settings.get(query_condition_key,
                                             getattr(default_settings, query_condition_key))

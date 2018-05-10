@@ -18,9 +18,9 @@ COOKIE_MONGODB_PASSWORD = ''
 COOKIE_MONGODB_DB = ''
 COOKIE_MONGODB_COLL = ''
 
-ACTIVE_RESTRICT_NUM = 2500
-QUERY_CONDITION = {
-    'fitler': {}
+COOKIE_ACTIVE_RESTRICT_NUM = 2500
+COOKIE_QUERY_CONDITION = {
+    'filter': {}
 }
 
 # COOKIE_STORAGE = 'scrapy_rotated_cookies.extensions.file_storage.CookieFileStorage'
